@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк - форма</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Логотип приложения">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/">Html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+
+      <section class="form">
+        <p>Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+        <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__name-wrapper">
+            <label class="form__label">Фамилия:
+              <input type="text" placeholder="Укажите фамилию *" required>
+            </label>
+            <label class="form__label">Имя:
+              <input type="text" placeholder="Введите ваше имя *" required>
+            </label>
+            <label class="form__label">Отчество:
+              <input type="text" placeholder="Ну и отчество тоже">
+            </label>
+          </div>
+
+          <div class="form__checkbox-wrapper">
+            <h2 class="form__title">Ваши безбашенный достижения в путешествии</h2>
+            <label>
+              <input type="checkbox" name="1" checked> Сделал селфи с акулой
+            </label>
+            <label>
+              <input type="checkbox" name="2" checked> Обгорел на пляже
+            </label>
+            <label>
+              <input type="checkbox" name="3"> Видел чака Норриса
+            </label>
+            <label>
+              <input type="checkbox" name="4"> Накупил сувениров
+            </label>
+            <label>
+              <input type="checkbox" name="5" checked> Удержал башню
+            </label>
+            <label>
+              <input type="checkbox" name="6"> Разгромил отель
+            </label>
+          </div>
+
+          <div class="form__contact-wrapper">
+            <label class="form__label">Номер телефона
+              <input type="text" name="tel" placeholder="Номер, пожалуйста">
+            </label>
+            <label class="form__label">Адрес почты
+              <input type="email" name="email" placeholder="Введите почту *" required>
+            </label>
+          </div>
+
+          <div class="form__radio-wrapper">
+            <h2 class="form__title">С каким приложением путешествовали?</h2>
+            <label>
+              <input type="radio" name="OS" value="iOS" checked> Pink для iOS
+            </label>
+            <label>
+              <input type="radio" name="OS" value="Android"> Pink на Android
+            </label>
+            <label>
+              <input type="radio" name="OS" value="Windows"> Windows Phone
+            </label>
+          </div>
+
+          <div class="form__comment-wrapper">
+            <h2 class="form__title">Опишите свои эмоции</h2>
+            <textarea name="comment" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <input type="submit" value="ОТПРАВИТЬ ФОРМУ">
+            <p class="form__description"><span class="form__description--red">*</span> - Обазятельные поля</p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo-image" src="http://placehold.it/150x100" alt="Логотип приложения">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a></li>
+          <li class="social__item"><a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a></li>
+          <li class="social__item"><a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Мы в Инстаграме</span></a></li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+      </div>
+    </footer>
+  </body>
+</html>

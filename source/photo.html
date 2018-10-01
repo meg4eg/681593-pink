@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Пинк - фото</title>
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Логотип приложения">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/">Html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="page-main__title">Фотографии пользователей</h1>
+
+      <section class="photo">
+        <h2 class="visually-hidden">Фотографии пользователей и комментарии</h2>
+        <p class="photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <div class="photo__list">
+          <blockquote class="photo__item">
+            <a class="photo__author-image" href="#">
+              <img src="http://placehold.it/150x100" alt="">
+            </a>
+            <cite class="photo__author-name">Анна</cite>
+            <!-- <time class="photo__author-time"></time> -->
+            <p class="photo__author-comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <button class="photo__likes-counter" type="button">Нравится:</button>
+          </blockquote>
+          <blockquote class="photo__item">
+            <a class="photo__author-image" href="#">
+              <img src="http://placehold.it/150x100" alt="">
+            </a>
+            <cite class="photo__author-name">Левон</cite>
+            <!-- <time class="photo__author-time"></time> -->
+            <p class="photo__author-comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <button class="photo__likes-counter" type="button">Нравится:</button>
+          </blockquote>
+          <blockquote class="photo__item">
+            <a class="photo__author-image" href="#">
+              <img src="http://placehold.it/150x100" alt="">
+            </a>
+            <cite class="photo__author-name">Антон</cite>
+            <!-- <time class="photo__author-time"></time> -->
+            <p class="photo__author-comment">Соседи будут рады!</p>
+            <button class="photo__likes-counter" type="button">Нравится:</button>
+          </blockquote>
+          <blockquote class="photo__item">
+            <a class="photo__author-image" href="#">
+              <img src="http://placehold.it/150x100" alt="">
+            </a>
+            <cite class="photo__author-name">Борис</cite>
+            <!-- <time class="photo__author-time"></time> -->
+            <p class="photo__author-comment">Здесь могла быть ваша цитат о высоком и вечном</p>
+            <button class="photo__likes-counter" type="button">Нравится:</button>
+          </blockquote>
+          <blockquote class="photo__item">
+            <a class="photo__author-image" href="#">
+              <img src="http://placehold.it/150x100" alt="">
+            </a>
+            <cite class="photo__author-name">Сергей</cite>
+            <!-- <time class="photo__author-time"></time> -->
+            <p class="photo__author-comment">Самая кубанская в мире!</p>
+            <button class="photo__likes-counter" type="button">Нравится:</button>
+          </blockquote>
+          <blockquote class="photo__item">
+            <a class="photo__author-image" href="#">
+              <img src="http://placehold.it/150x100" alt="">
+            </a>
+            <cite class="photo__author-name">Максим</cite>
+            <!-- <time class="photo__author-time"></time> -->
+            <p class="photo__author-comment">Где снег-то?</p>
+            <button class="photo__likes-counter" type="button">Нравится:</button>
+          </blockquote>
+          <blockquote class="photo__item">
+            <a class="photo__author-image" href="#">
+              <img src="http://placehold.it/150x100" alt="">
+            </a>
+            <cite class="photo__author-name">Надежда</cite>
+            <!-- <time class="photo__author-time"></time> -->
+            <p class="photo__author-comment">Всем GM и взаимные лайки!</p>
+            <button class="photo__likes-counter" type="button">Нравится:</button>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="upload">
+        <h2 class="visually-hidden">Разместите ваше фото</h2>
+        <p class="upload__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
+          <!-- <input type="image" name="image"> -->
+          <img src="http://placehold.it/150x100" alt="Ваше фото">
+          <label for="photo-size"><svg></svg></label>
+          <input type="range" id="photo-size">
+          <label for="photo-color"><svg></svg></label>
+          <input type="range" id="photo-color">
+          <label for="photo-brightness"><svg></svg></label>
+          <input type="range" id="photo-brightness">
+          <input type="submit" value="Запостить">
+          <input type="reset" value="Отмена">
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo-image" src="http://placehold.it/150x100" alt="Логотип приложения">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item"><a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в Твиттере</span></a></li>
+          <li class="social__item"><a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a></li>
+          <li class="social__item"><a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Мы в Инстаграме</span></a></li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+      </div>
+    </footer>
+  </body>
+</html>
