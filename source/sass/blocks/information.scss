@@ -1,0 +1,32 @@
+.information {
+  margin: 0 auto;
+  margin-bottom: 45px;
+  padding: 0 20px;
+}
+
+.information__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.information__title--large {
+  font-weight: light;
+  font-size: 24px;
+  color: rgba(40, 54, 69, 1);
+}
+
+.information__description {
+  font-weight: regular;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.information__wrapper {
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.information__list {
+  list-style: none;
+}

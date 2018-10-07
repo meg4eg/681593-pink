@@ -1,0 +1,21 @@
+.download {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0 20px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: light;
+
+  background-color: rgba(40, 54, 69, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.download__image-wrapper {
+    background-image: url("../../img/bg-back-mobile@1x.jpg");
+    background-repeat: no-repeat;
+}
+
+.download__list {
+  list-style: none;
+}
